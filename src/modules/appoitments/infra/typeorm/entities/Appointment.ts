@@ -1,6 +1,6 @@
 
 import { Entity, Column, PrimaryGeneratedColumn, CreateDateColumn, UpdateDateColumn, ManyToOne, JoinColumn }  from 'typeorm'
-import User from './User';
+import User from '@modules/users/infra/typeorm/entities/User';
 
 interface appointmentConstrutor {
     provider: string;
