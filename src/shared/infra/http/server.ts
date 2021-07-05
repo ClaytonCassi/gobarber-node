@@ -5,7 +5,8 @@ import 'reflect-metadata';
 import '@shared/infra/typeorm';
 import uploadConfig from '@config/upload';
 import AppError from '@shared/errors/AppError';
-import cors from 'cors'
+import cors from 'cors';
+import '@shared/container';
 
 const app = express();
 

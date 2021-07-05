@@ -1,5 +1,7 @@
 import { Router } from 'express';
-import  AuthenticateUserService  from '@modules/users/services/AuthenticateUserService'
+import { container } from 'tsyringe';
+import  AuthenticateUserService  from '@modules/users/services/AuthenticateUserService';
+
 
 interface User {
   email: string;
@@ -8,13 +10,14 @@ interface User {
 
 const sessionRouter = Router();
 
-sessionRouter.post('/', async (request, response) => {
 
+sessionRouter.post('/', async (request, response) => {
+  
   const { email, password}: User = request.body;
   
-  const authenticateUserService = new AuthenticateUserService();
+  const authenticateUser = container.resolve(AuthenticateUserService);
 
-  const { user, token} = await authenticateUserService.execute({
+  const { user, token} = await authenticateUser.execute({
     email,
     password,
   });

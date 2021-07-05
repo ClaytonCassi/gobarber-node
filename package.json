@@ -30,6 +30,7 @@
     "pg": "^8.5.1",
     "reflect-metadata": "^0.1.13",
     "ts-node-dev": "^1.1.6",
+    "tsyringe": "^4.5.0",
     "typeorm": "^0.2.32",
     "uuidv4": "^6.2.7"
   }
