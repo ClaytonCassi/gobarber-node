@@ -3,7 +3,7 @@
 Projeto backend em node
 Criação do back da aplicação Go barber, para agendamento de atendimento de uma barbearia.
 
-Techs utilizadas:#
+Techs utilizadas:##
 TypeOrm
 Express
 Typescript
