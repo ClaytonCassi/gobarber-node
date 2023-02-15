@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>GoBarber Node</title>
+	
 </head>
 <body>
 
